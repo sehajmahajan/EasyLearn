@@ -1,0 +1,568 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", serif;
+}
+
+:root {
+    --white: #FFFFFF;
+    --white90: #E4E4E7;
+    --white95: #F1F1F3;
+    --white97: #F7F7F8;
+    --white99: #FCFCFD;
+    --black: #000000;
+    --orange50: #FF9500;
+    --orange70: #FFBF66;
+    --orange75: #FFCA80;
+    --orange80: #FFD599;
+    --orange90: #FFEACC;
+    --orange95: #FFF4E5;
+    --orange97: #FFF9F0;
+    --orange99: #FFFDFA;
+    --grey10: #1A1A1A;
+    --grey15: #262626;
+    --grey20: #333333;
+    --grey30: #4C4C4D;
+    --grey35: #59595A;
+    --grey40: #656567;
+    --grey60: #98989A;
+    --grey70: #B3B3B3;
+}
+
+body {
+    background-color: var(--white97);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    color: var(--grey15);
+}
+
+
+nav {
+    height: 99px;
+    margin: 20px 30px 100px 30px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 785px;
+    font-size: 18px;
+    box-shadow: 0 0px 10px var(--grey40);
+}
+
+nav #nav-left ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 12px;
+}
+
+nav #nav-left ul li:nth-child(1) {
+    display: none;
+}
+
+nav #nav-left ul li {
+    padding: 14px 24px;
+}
+
+nav #nav-left ul li img {
+    height: 54px;
+    width: 54px;
+    border-radius: 8px;
+}
+
+nav #nav-left ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--grey15);
+}
+
+nav #nav-left ul li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--grey15);
+}
+
+nav #nav-right ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav #nav-right ul li button {
+    height: 55px;
+    width: 117px;
+    cursor: pointer;
+}
+
+nav #nav-right ul li:nth-child(1) button {
+    border: transparent;
+    background-color: transparent;
+}
+
+nav #nav-right ul li:nth-child(2) button {
+    border: 1px solid var(--orange50);
+    border-radius: 8px;
+    background-color: var(--orange50);
+    color: var(--white);
+}
+
+.contactContainer {
+    margin: 50px 162px;
+    background: var(--white);
+    border-radius: 6px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contactContainer .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.contactContainer .content .contactInfo {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 20px;
+    position: relative;
+}
+
+.contactContainer .content .contactInfo::before {
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+}
+
+.contactContainer .content .contactInfo .address,
+.phone,
+.email {
+    margin: 14px;
+    text-align: center;
+}
+
+.contactContainer .content .contactInfo .address i,
+.phone i,
+.email i {
+    color: var(--orange50);
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.contactContainer .content .message {
+    width: 75%;
+}
+
+.contactContainer .content .message h1 {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.contactContainer .content .message form .inputField {
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.contactContainer .content .message form .inputField input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: var(--white97);
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+
+.contactContainer .content .message form .inputField textarea {
+    padding: 6px 15px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: var(--white97);
+    border-radius: 6px;
+    resize: none;
+}
+
+.contactContainer .content .message form .messageField {
+    min-height: 110px;
+}
+
+.contactContainer .content .message form .button {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--white);
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: var(--orange50);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contactContainer .content .message form .button:hover {
+    background: var(--orange70);
+}
+
+footer {
+    padding: 100px 162px 30px 162px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    background-color: var(--white);
+    color: var(--grey15);
+
+}
+
+footer #footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer #footer-top #footer-top-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+footer #footer-top #footer-top-left>div {
+    display: flex;
+    gap: 10px;
+}
+
+footer #footer-top #footer-top-left #logo img {
+    height: 54px;
+    width: 54px;
+    border-radius: 8px;
+}
+
+footer #footer-top #footer-top-right {
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+}
+
+footer #footer-top #footer-top-right .footer-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+footer #footer-top #footer-top-right .footer-sections .footer-links-heading {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+footer #footer-top #footer-top-right .footer-sections .footer-links a {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--grey35);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer #footer-top #footer-top-right .social-profiles {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+footer #footer-top #footer-top-right .social-profiles .footer-links {
+    background-color: var(--white97);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+footer #footer-top #footer-top-right .social-profiles .footer-links a {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--grey20);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer #footer-bottom {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--grey40);
+}
+
+@media screen and (max-width:1840px) {
+    nav {
+        gap: 0;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    body {
+        padding: 0;
+    }
+
+    /* nav */
+    nav {
+        height: 80px;
+        margin: 0 0 40px 0;
+        justify-content: space-between;
+        font-size: 15px;
+        gap: 0;
+    }
+
+    nav #nav-left ul li img {
+        height: 40px;
+        width: 42px;
+    }
+
+    nav #nav-right ul li button {
+        height: 35px;
+        width: 90px;
+    }
+
+    .contactContainer {
+        margin: 50px 80px;
+    }
+
+    footer {
+        padding: 70px 80px 30px 80px;
+        gap: 85px;
+    }
+
+    footer #footer-top #footer-top-left {
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    footer #footer-top #footer-top-left #logo img {
+        height: 40px;
+        width: 40px;
+    }
+
+    footer #footer-top #footer-top-right .footer-sections .footer-links-heading {
+        font-size: 15px;
+    }
+
+    footer #footer-top #footer-top-right .footer-sections .footer-links a {
+        font-size: 12px;
+    }
+
+    footer #footer-bottom {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:1069px) {
+    body {
+        padding: 0;
+    }
+
+    /* nav */
+    nav {
+        height: 60px;
+        margin: 0 0 32px 0;
+        font-size: 13px;
+        gap: 0;
+    }
+
+    nav #nav-left ul li img {
+        height: 35px;
+        width: 35px;
+    }
+
+    nav #nav-left ul {
+        gap: 0px;
+    }
+
+    nav #nav-right ul li button {
+        height: 30px;
+        width: 60px;
+    }
+    .contactContainer {
+        margin: 50px 30px;
+    }
+
+    footer {
+        padding: 40px 30px;
+        gap: 50px;
+    }
+
+    footer #footer-top #footer-top-left {
+        gap: 15px;
+        font-size: 13px;
+    }
+
+    footer #footer-top #footer-top-left #logo img {
+        height: 40px;
+        width: 40px;
+    }
+
+    footer #footer-top #footer-top-right {
+        gap: 60px;
+    }
+
+    footer #footer-top #footer-top-right .footer-sections .footer-links-heading {
+        font-size: 14px;
+    }
+
+    footer #footer-bottom {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        padding: 0;
+    }
+
+    /* nav */
+    nav {
+        height: 40px;
+        margin: 0 0 25px 0;
+        font-size: 12px;
+        gap: 0;
+    }
+
+    nav #nav-left ul li img {
+        height: 35px;
+        width: 35px;
+    }
+
+    nav #nav-left ul li:nth-child(1) {
+        display: block;
+    }
+
+    nav #nav-left ul li:nth-child(3),
+    nav #nav-left ul li:nth-child(4),
+    nav #nav-left ul li:nth-child(5),
+    nav #nav-left ul li:nth-child(6),
+    nav #nav-left ul li:nth-child(7) {
+        display: none;
+    }
+
+    nav #nav-right ul {
+        gap: 6px;
+    }
+
+    nav #nav-right ul li button {
+        height: 20px;
+        width: 50px;
+    }
+
+    .contactContainer {
+        margin: 30px 10px;
+        padding: 10px;
+    }
+    .contactContainer .content {
+        gap: 30px;
+        flex-direction: column;
+    }
+    .contactContainer .content .contactInfo {
+        width: auto;
+        gap: 10px;
+        font-size: 10px;
+    }
+    .contactContainer .content .contactInfo .address, .phone, .email {
+        margin: 2px;
+    }
+    .contactContainer .content .contactInfo .address i, .phone i, .email i {
+        font-size: 10px;
+    }
+    .contactContainer .content .contactInfo::before {
+        display: none;
+    }
+    .contactContainer .content .message {
+        width: auto;
+        text-align: center;
+    }
+    
+    .contactContainer .content .message h1 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .contactContainer .content .message form .inputField {
+        height: 22px;
+        font-size: 10px;
+    }
+    .contactContainer .content .message form .inputField input {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+    form .messageField {
+        min-height: 85px;
+    }
+    .contactContainer .content .message form .inputField textarea {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    .contactContainer .content .message form .button {
+        margin-top: 0px;
+        font-size: 9px;
+    }
+
+    footer {
+        padding: 25px 10px;
+        gap: 15px;
+    }
+
+    footer #footer-top {
+        gap: 12px;
+        flex-direction: column;
+    }
+
+    footer #footer-top #footer-top-left {
+        gap: 10px;
+        font-size: 10px;
+    }
+
+    footer #footer-top #footer-top-left #logo img {
+        height: 40px;
+        width: 40px;
+    }
+
+    footer #footer-top #footer-top-right {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    footer #footer-top #footer-top-right .footer-sections {
+        gap: 2px;
+    }
+
+    footer #footer-top #footer-top-right .footer-sections .footer-links-heading {
+        font-size: 13px;
+    }
+
+    footer #footer-top #footer-top-right .footer-sections .footer-links a {
+        font-size: 10px;
+    }
+
+    footer #footer-top #footer-top-right .social-profiles {
+        gap: 2px;
+    }
+
+    footer #footer-top #footer-top-right .social-profiles .footer-links {
+        padding: 5px;
+    }
+
+    footer #footer-bottom {
+        font-size: 11px;
+    }
+}
