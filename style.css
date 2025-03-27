@@ -1,0 +1,1717 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", serif;
+}
+
+:root {
+    --white: #FFFFFF;
+    --white90: #E4E4E7;
+    --white95: #F1F1F3;
+    --white97: #F7F7F8;
+    --white99: #FCFCFD;
+    --black: #000000;
+    --orange50: #FF9500;
+    --orange70: #FFBF66;
+    --orange75: #FFCA80;
+    --orange80: #FFD599;
+    --orange90: #FFEACC;
+    --orange95: #FFF4E5;
+    --orange97: #FFF9F0;
+    --orange99: #FFFDFA;
+    --grey10: #1A1A1A;
+    --grey15: #262626;
+    --grey20: #333333;
+    --grey30: #4C4C4D;
+    --grey35: #59595A;
+    --grey40: #656567;
+    --grey60: #98989A;
+    --grey70: #B3B3B3;
+}
+
+body {
+    background-color: var(--white97);
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+
+nav {
+    height: 99px;
+    margin: 20px 30px 100px 30px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 785px;
+    font-size: 18px;
+    box-shadow: 0 0px 10px var(--grey40);
+}
+
+nav #nav-left ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 12px;
+}
+
+nav #nav-left ul li:nth-child(1) {
+    display: none;
+}
+
+nav #nav-left ul li {
+    padding: 14px 24px;
+}
+
+nav #nav-left ul li img {
+    height: 54px;
+    width: 54px;
+    border-radius: 8px;
+}
+
+nav #nav-left ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--grey15);
+}
+
+nav #nav-left ul li a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: var(--grey15);
+}
+
+nav #nav-right ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav #nav-right ul li button {
+    height: 55px;
+    width: 117px;
+    cursor: pointer;
+}
+
+nav #nav-right ul li:nth-child(1) button {
+    border: transparent;
+    background-color: transparent;
+}
+
+nav #nav-right ul li:nth-child(2) button {
+    border: 1px solid var(--orange50);
+    border-radius: 8px;
+    background-color: var(--orange50);
+    color: var(--white);
+}
+
+#hero-section {
+    /* height: 337px; */
+    /* width: 965px; */
+    margin: 0 auto;
+    padding: 0 55px;
+}
+
+#hero-section #hcs-1 {
+    text-align: center;
+    font-size: 48px;
+    background-color: var(--white99);
+    padding: 14px 30px 14px 20px;
+    font-weight: bold;
+    border-radius: 11px;
+}
+
+#hero-section #hcs-1 span:nth-child(1) {
+    font-size: 38px;
+    background-color: var(--orange95);
+    padding: 14px;
+    border-radius: 6px;
+}
+
+#hero-section #hcs-1 span:nth-child(2) {
+    color: var(--orange50);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#hero-section #hcs-2 {
+    font-size: 38px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#hero-section #hcs-3 {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#hero-section #hcs-4 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 60px;
+    gap: 12px;
+}
+
+#hero-section #hcs-4 button {
+    width: 195px;
+    height: 63px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#hero-section #hcs-4 button:nth-child(1) {
+    border: var(--orange50);
+    background-color: var(--orange50);
+    color: var(--white);
+}
+
+#hero-section #hcs-4 button:nth-child(2) {
+    border: var(--white);
+    background-color: var(--white);
+}
+
+#companies {
+    height: 154px;
+    background-color: var(--white99);
+    margin: 100px 162px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 8px;
+}
+
+#companies div {
+    padding: 30px 40px;
+}
+
+#companies div img {
+    height: 34px;
+    width: 68px;
+    filter: grayscale(1);
+}
+
+#banner {
+    height: 790px;
+    margin: 100px 162px 150px 162px;
+}
+
+#banner img {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+
+#benefits {
+    margin: 150px 162px 100px 162px;
+}
+
+#benefits #benefits-heading {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+#benefits #benefits-para {
+    display: flex;
+    justify-content: space-between;
+}
+
+#benefits #benefits-para p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--grey35);
+}
+
+#benefits #benefits-para button {
+    background-color: var(--white99);
+    border: var(--white99);
+    border-radius: 8px;
+    padding: 18px 24px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#benefits #benefits-cards {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px 5px;
+}
+
+#benefits #benefits-cards .bc-card {
+    padding: 50px;
+    background-color: var(--white);
+    border-radius: 12px;
+}
+
+#benefits #benefits-cards .bc-card-num {
+    text-align: right;
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+#benefits #benefits-cards .bc-card-heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+#benefits #benefits-cards .bc-card-para {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--grey30);
+    margin-bottom: 50px;
+}
+
+#benefits #benefits-cards .bc-card-link {
+    padding: 20px;
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--orange50);
+    margin: 50px 0;
+    text-align: right;
+    cursor: pointer;
+}
+
+#courses {
+    margin: 100px 162px 108px 161px;
+}
+
+#courses #courses-heading {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+#courses #courses-para {
+    display: flex;
+    justify-content: space-between;
+}
+
+#courses #courses-para p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--grey35);
+}
+
+#courses #courses-para button {
+    background-color: var(--white99);
+    border: var(--white99);
+    border-radius: 8px;
+    padding: 18px 24px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#courses #courses-cards {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+
+#courses #courses-cards .cc-card {
+    padding: 42px;
+    background-color: var(--white);
+    border-radius: 12px;
+}
+
+#courses #courses-cards .cc-card-img img {
+    border-radius: 8px;
+    width: 625.5px;
+    height: 380px;
+}
+
+#courses #courses-cards .cc-card-brief {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#courses #courses-cards .cc-card-brief-left {
+    display: flex;
+    gap: 10px;
+}
+
+#courses #courses-cards .cc-card-brief-duration,
+#courses #courses-cards .cc-card-brief-proficiency {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    color: var(--grey30);
+}
+
+#courses #courses-cards .cc-card-brief-author span {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--grey15);
+}
+
+#courses #courses-cards .cc-card-heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+#courses #courses-cards .cc-card-para {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--grey30);
+    margin-bottom: 50px;
+}
+
+#courses #courses-cards .cc-card-button {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background-color: var(--white97);
+    color: var(--grey15);
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    border: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#testimonials {
+    margin: 100px 162px 108px 161px;
+}
+
+#testimonials #testimonials-heading {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+#testimonials #testimonials-para {
+    display: flex;
+    justify-content: space-between;
+}
+
+#testimonials #testimonials-para p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--grey35);
+}
+
+#testimonials #testimonials-para button {
+    background-color: var(--white99);
+    border: var(--white99);
+    border-radius: 8px;
+    padding: 18px 24px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#testimonials #testimonials-cards {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+#testimonials #testimonials-cards .tc-card {
+    padding: 50px;
+    padding-bottom: 30px;
+    background-color: var(--white);
+    border-radius: 12px;
+    width: 711px;
+}
+
+#testimonials #testimonials-cards .tc-card-para {
+    overflow: hidden;
+    text-overflow: clip;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--grey30);
+    margin-bottom: 50px;
+    height: 80px;
+}
+
+#testimonials #testimonials-cards .tc-card-brief {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#testimonials #testimonials-cards .tc-card-brief-left {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#testimonials #testimonials-cards .tc-card-brief-left .tc-card-brief-img {
+    height: 60px;
+    width: 60px;
+    border-radius: 8px;
+}
+
+#testimonials #testimonials-cards .tc-card-brief-left .tc-card-brief-author {
+    width: 420px;
+}
+
+#testimonials #testimonials-cards .tc-card-brief-right .tc-card-button {
+    padding: 18px 15px 18px 15px;
+    background-color: var(--white97);
+    color: var(--grey15);
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    border: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#pricing {
+    margin: 168px 162px 150px 161px;
+}
+
+#pricing #pricing-heading {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+#pricing #pricing-para {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pricing #pricing-para p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--grey35);
+}
+
+#pricing #pricing-para #filter {
+    background-color: var(--white);
+    border: var(--white);
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+}
+
+#pricing #pricing-para #filter button {
+    border-radius: 8px;
+    padding: 12px 12px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--grey30);
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+#pricing #pricing-para #filter .active {
+    background-color: var(--orange50);
+    color: var(--white);
+    transition: all 0.3s ease-in;
+}
+
+#pricing #pricing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 80px;
+    gap: 30px;
+    background-color: var(--white);
+    border-radius: 8px;
+    margin-top: 80px;
+}
+
+#pricing #pricing-cards .pc-card {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 30px 30px 30px;
+    border-radius: 12px;
+    background-color: var(--white99);
+    border: 1px solid var(--white95);
+    box-shadow: 0px 3px 3px var(--grey70);
+}
+
+#pricing #pricing-cards .pc-card .pc-card-heading {
+    padding: 12px 0;
+    text-align: center;
+    background-color: var(--orange97);
+    color: var(--grey15);
+    border-radius: 6px;
+    border: 1px solid var(--orange90);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+#pricing #pricing-cards .pc-card .pc-card-pricing {
+    text-align: center;
+}
+
+#pricing #pricing-cards .pc-card .pc-card-pricing span {
+    font-size: 80px;
+    font-weight: 600;
+    color: var(--grey15);
+}
+
+#pricing #pricing-cards .pc-card .pc-card-pricing {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--grey30);
+}
+
+#pricing #pricing-cards .pc-card .pc-card-features {
+    border: 1px solid var(--white95);
+    border-radius: 6px;
+    padding: 40px;
+}
+
+#pricing #pricing-cards .pc-card .pc-card-features-heading {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+#pricing #pricing-cards .pc-card .pc-card-features-list {
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: auto 30px;
+}
+
+#pricing #pricing-cards .pc-card .pc-card-features .pc-card-features-list>div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid var(--white95);
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 14px;
+    color: var(--grey15);
+}
+
+#pricing #pricing-cards .pc-card .pc-card-features .pc-card-features-list>div span:nth-child(1) {
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+#pricing #pricing-cards .pc-card .pc-card-features .pc-card-features-list .checked span:nth-child(1) {
+    background-color: var(--orange95);
+}
+
+#pricing #pricing-cards .pc-card .pc-card-features .pc-card-features-list .un-checked span:nth-child(1) {
+    background-color: var(--white95);
+}
+
+#pricing #pricing-cards .pc-card .pc-card-features .pc-card-features-list>div span:nth-child(2) {
+    color: var(--grey30);
+}
+
+#pricing #pricing-cards .pc-card button {
+    padding: 20px 0;
+    text-align: center;
+    background-color: var(--orange50);
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+    border: transparent;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+
+footer {
+    padding: 100px 162px 30px 162px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    background-color: var(--white);
+    color: var(--grey15);
+
+}
+
+footer #footer-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer #footer-top #footer-top-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+footer #footer-top #footer-top-left>div {
+    display: flex;
+    gap: 10px;
+}
+
+footer #footer-top #footer-top-left #logo img {
+    height: 54px;
+    width: 54px;
+    border-radius: 8px;
+}
+
+footer #footer-top #footer-top-right {
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+}
+
+footer #footer-top #footer-top-right .footer-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+footer #footer-top #footer-top-right .footer-sections .footer-links-heading {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+footer #footer-top #footer-top-right .footer-sections .footer-links a {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--grey35);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer #footer-top #footer-top-right .social-profiles {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+footer #footer-top #footer-top-right .social-profiles .footer-links{
+    background-color: var(--white97);
+    padding: 8px;
+    border-radius: 8px;
+}
+footer #footer-top #footer-top-right .social-profiles .footer-links a {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--grey20);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer #footer-bottom {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--grey40);
+}
+
+@media screen and (max-width:1840px){
+    nav {
+       gap: 0;
+    }
+    
+    #companies {
+        height: auto;
+        flex-wrap: wrap;
+    }
+    
+    
+    #benefits #benefits-cards .bc-card {
+        width: 526px;
+    }
+    
+    #courses #courses-cards .cc-card {
+        width: 514px;
+    }
+    
+    #courses #courses-cards .cc-card-img img {
+        width: 100%;
+        height: 300px;
+    }
+    
+    #testimonials #testimonials-cards .tc-card {
+        width: 514px;
+    }
+    
+    #testimonials #testimonials-cards .tc-card-para {
+        height: 70px;
+    }
+    
+    #testimonials #testimonials-cards .tc-card-brief-left .tc-card-brief-author {
+        width: 175px;
+    }
+    
+    #pricing #pricing-cards .pc-card {
+       width: 434px;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    body {
+        padding: 0;
+    }
+
+    /* nav */
+    nav {
+        height: 80px;
+        margin: 0 0 40px 0;
+        justify-content: space-between;
+        font-size: 15px;
+        gap: 0;
+    }
+
+    nav #nav-left ul li img {
+        height: 40px;
+        width: 42px;
+    }
+
+    nav #nav-right ul li button {
+        height: 35px;
+        width: 90px;
+    }
+
+    /* hero-section */
+    #hero-section #hcs-1 {
+        width: 845px;
+        margin: 0 auto;
+        font-size: 32px;
+    }
+
+    #hero-section #hcs-1 span:nth-child(1) {
+        padding: 10px;
+    }
+
+    #hero-section #hcs-2 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    #hero-section #hcs-4 button {
+        width: 160px;
+        height: 56px;
+        font-size: 16px;
+    }
+
+    /* companies-section */
+    #companies {
+        height: 60px;
+        margin: 80px 30px;
+        flex-wrap: wrap;
+    }
+
+    #companies div {
+        padding: 0;
+    }
+
+    /* banner-section */
+    #banner {
+        height: 430px;
+        margin: 100px 80px 150px 80px;
+    }
+
+    /* benefits-section */
+    #benefits {
+        margin: 150px 80px 100px 80px;
+    }
+
+    #benefits #benefits-heading {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    #benefits #benefits-para p {
+        font-size: 16px;
+    }
+
+    #benefits #benefits-para button {
+        padding: 12px;
+        width: 168px;
+    }
+    #benefits #benefits-cards {
+        justify-content: center;
+        gap: 10px;
+    }
+    #benefits #benefits-cards .bc-card {
+        padding: 20px;
+        width: 350px;
+        height: inherit;
+    }
+    #benefits #benefits-cards .bc-card-num {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+    #benefits #benefits-cards .bc-card-heading {
+        font-size: 20px;
+    }
+    #benefits #benefits-cards .bc-card-para {
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+    #benefits #benefits-cards .bc-card-link {
+        padding: 15px;
+        font-size: 20px;
+        margin: 30px 0 10px 0;
+    }
+
+    /* courses-section */
+    #courses {
+        margin: 150px 80px 100px 80px;
+    }
+
+    #courses #courses-heading {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    #courses #courses-para p {
+        font-size: 16px;
+    }
+
+    #courses #courses-para button {
+        padding: 12px;
+        width: 168px;
+    }
+    #courses #courses-cards {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #courses #courses-cards .cc-card {
+        padding: 20px;
+        width: 350px;
+    }
+
+    #courses #courses-cards .cc-card .cc-card-img img {
+        height: 200px;
+        width: 100%;
+    }
+
+    #courses #courses-cards .cc-card-brief-duration,
+    #courses #courses-cards .cc-card-brief-proficiency {
+        font-size: 10px;
+    }
+
+    #courses #courses-cards .cc-card-brief-author span {
+        font-size: 14px;
+    }
+
+    #courses #courses-cards .cc-card-heading {
+        font-size: 18px;
+    }
+
+    #courses #courses-cards .cc-card-para {
+        font-size: 13px;
+        margin-bottom: 30px;
+    }
+
+    #courses #courses-cards .cc-card-button {
+        margin-top: 25px;
+        margin-bottom: 0px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        font-size: 14px;
+    }
+
+    /* testimonials-section */
+    #testimonials {
+        margin: 100px 80px 100px 80px;
+    }
+
+    #testimonials #testimonials-heading {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    #testimonials #testimonials-para p {
+        font-size: 16px;
+    }
+
+    #testimonials #testimonials-para button {
+        padding: 12px;
+        width: 168px;
+    }
+
+    #testimonials #testimonials-cards {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #testimonials #testimonials-cards .tc-card {
+        width: 450px;
+        padding: 20px;
+    }
+
+    #testimonials #testimonials-cards .tc-card-para {
+        height: 50px;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    #testimonials #testimonials-cards .tc-card-brief {
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+
+    #testimonials #testimonials-cards .tc-card-brief-left .tc-card-brief-img {
+        height: 35px;
+        width: 35px;
+    }
+
+    #testimonials #testimonials-cards .tc-card-brief-left .tc-card-brief-author {
+        width: 259px;
+        font-size: 12px;
+    }
+
+    #testimonials #testimonials-cards .tc-card-brief-right .tc-card-button {
+        padding: 10px 5px;
+        font-size: 12px;
+    }
+
+    /* pricing-section */
+    #pricing {
+        margin: 100px 80px 100px 80px;
+    }
+    #pricing #pricing-heading {
+        font-size: 40px;
+        font-weight: 500;
+    }
+    #pricing #pricing-para {
+        gap: 20px;
+    }
+    #pricing #pricing-para p {
+        font-size: 16px;
+    }
+    #pricing #pricing-para #filter {
+        padding: 12px;
+    }
+    #pricing #pricing-para #filter button {
+        padding: 10px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    #pricing #pricing-cards {
+        padding: 20px;
+        gap: 10px;
+    }
+    #pricing #pricing-cards .pc-card {
+        width: 400px;
+        gap: 15px;
+        padding: 20px 10px 10px 10px;
+    }
+    #pricing #pricing-cards .pc-card .pc-card-heading {
+        padding: 12px 0;
+        text-align: center;
+        background-color: var(--orange97);
+        color: var(--grey15);
+        border-radius: 6px;
+        border: 1px solid var(--orange90);
+        font-size: 12px;
+        font-weight: 500;
+    }
+    #pricing #pricing-cards .pc-card .pc-card-pricing {
+        font-size: 12px;
+    }
+    #pricing #pricing-cards .pc-card .pc-card-pricing span {
+        font-size: 40px;
+    }
+    #pricing #pricing-cards .pc-card .pc-card-features {
+        padding: 20px;
+    }
+    #pricing #pricing-cards .pc-card .pc-card-features-heading {
+        font-size: 14px;
+        margin-bottom: 14px;
+    }
+    #pricing #pricing-cards .pc-card .pc-card-features .pc-card-features-list>div {
+        font-size: 12px;
+        padding: 8px;
+    }
+    #pricing #pricing-cards .pc-card .pc-card-features .pc-card-features-list>div span:nth-child(1) {
+        padding: 8px;
+    }
+    #pricing #pricing-cards .pc-card button {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    footer {
+        padding: 70px 80px 30px 80px;
+        gap: 85px;
+    }
+    footer #footer-top #footer-top-left {
+        gap: 20px;
+        font-size: 14px;
+    }
+    footer #footer-top #footer-top-left #logo img {
+        height: 40px;
+        width: 40px;
+    }
+    footer #footer-top #footer-top-right .footer-sections .footer-links-heading {
+        font-size: 15px;
+    }
+    footer #footer-top #footer-top-right .footer-sections .footer-links a {
+        font-size: 12px;
+    }
+    footer #footer-bottom {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:1069px){
+    body {
+        padding: 0;
+    }
+
+    /* nav */
+    nav {
+        height: 60px;
+        margin: 0 0 32px 0;
+        font-size: 13px;
+        gap: 0;
+    }
+
+    nav #nav-left ul li img {
+        height: 35px;
+        width: 35px;
+    }
+
+    nav #nav-left ul {
+        gap: 0px;
+    }
+
+    nav #nav-right ul li button {
+        height: 30px;
+        width: 60px;
+    }
+
+    /* hero-section */
+    #hero-section {
+        margin: 32px auto;
+    }
+
+    #hero-section #hcs-1 {
+        width: 550px;
+        font-size: 25px;
+    }
+
+    #hero-section #hcs-1 span:nth-child(1) {
+        padding: 5px;
+        font-size: 25px;
+    }
+
+    #hero-section #hcs-2 {
+        font-size: 22px;
+    }
+
+    #hero-section #hcs-3 {
+        font-size: 15px;
+    }
+
+    #hero-section #hcs-4 {
+        margin-top: 40px;
+    }
+
+    #hero-section #hcs-4 button {
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    /* companies-section */
+    #companies {
+        margin: 32px 30px;
+    }
+
+    #companies div {
+        padding: 0;
+    }
+
+    /* banner-section */
+    #banner {
+        height: 250px;
+        margin: 40px 30px;
+    }
+
+    /* benefits-section */
+    #benefits {
+        margin: 40px 30px;
+    }
+
+    #benefits #benefits-heading {
+        font-size: 32px;
+    }
+
+    #benefits #benefits-para p {
+        font-size: 12px;
+    }
+
+    #benefits #benefits-para button {
+        padding: 2px 5px;
+        width: 151px;
+    }
+    #benefits #benefits-cards {
+        margin-top: 40px;
+        gap: 10px;
+    }
+    #benefits #benefits-cards .bc-card {
+        padding: 10px;
+        width: 349px;
+        height: inherit;
+    }
+    #benefits #benefits-cards .bc-card-num {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    #benefits #benefits-cards .bc-card-para {
+        font-size: 12px;
+    }
+    #benefits #benefits-cards .bc-card-link {
+        font-size: 17px;
+        margin-top: 15px;
+        padding: 0;
+    }
+
+    /* courses-section */
+    #courses {
+        margin: 40px 30px;
+    }
+
+    #courses #courses-heading {
+        font-size: 32px;
+    }
+
+    #courses #courses-para p {
+        font-size: 12px;
+    }
+
+    #courses #courses-para button {
+        padding: 2px 5px;
+        width: 151px;
+    }
+    #courses #courses-cards {
+        gap: 10px;
+        margin-top: 40px;
+    }
+
+    #courses #courses-cards .cc-card {
+        padding: 10px;
+        width: 349px;
+    }
+
+    #courses #courses-cards .cc-card .cc-card-img img {
+        height: 150px;
+    }
+    #courses #courses-cards .cc-card-brief {
+        margin-top: 12px;
+        margin-bottom: 20px;
+    }
+
+    #courses #courses-cards .cc-card-brief-author span {
+        font-size: 13px;
+    }
+
+    #courses #courses-cards .cc-card-heading {
+        font-size: 16px;
+    }
+
+    #courses #courses-cards .cc-card-para {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    #courses #courses-cards .cc-card-button {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    /* testimonials-section */
+    #testimonials {
+        margin: 40px 30px;
+    }
+
+    #testimonials #testimonials-heading {
+        font-size: 32px;
+    }
+
+    #testimonials #testimonials-para p {
+        font-size: 12px;
+    }
+
+    #testimonials #testimonials-para button {
+        padding: 2px 5px;
+        width: 151px;
+    }
+
+    #testimonials #testimonials-cards {
+        margin-top: 40px;
+    }
+
+    #testimonials #testimonials-cards .tc-card {
+        width: 349px;
+        padding: 10px;
+    }
+
+    #testimonials #testimonials-cards .tc-card-para {
+        height: 50px;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    #testimonials #testimonials-cards .tc-card-brief {
+        padding: 0;
+    }
+
+    #testimonials #testimonials-cards .tc-card-brief-left .tc-card-brief-img {
+        height: 35px;
+        width: 35px;
+    }
+
+    #testimonials #testimonials-cards .tc-card-brief-left .tc-card-brief-author {
+        width: 179px;
+    }
+
+    /* pricing-section */
+    #pricing {
+        margin: 40px 30px;
+    }
+    #pricing #pricing-heading {
+        font-size: 32px;
+    }
+    #pricing #pricing-para {
+        gap: 20px;
+    }
+    #pricing #pricing-para p {
+        font-size: 12px;
+    }
+    #pricing #pricing-para #filter {
+        padding: 3px 5px;
+        width: 151px;
+    }
+    #pricing #pricing-para #filter button {
+        padding: 10px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    #pricing #pricing-cards {
+        margin-top: 40px;
+        padding: 10px;
+    }
+    #pricing #pricing-cards .pc-card {
+        width: 339px;
+        gap: 10px;
+    }
+    #pricing #pricing-cards .pc-card .pc-card-heading {
+        padding: 10px 0;
+    }
+    #pricing #pricing-cards .pc-card .pc-card-pricing {
+        font-size: 12px;
+    }
+    #pricing #pricing-cards .pc-card .pc-card-pricing span {
+        font-size: 40px;
+    }
+    #pricing #pricing-cards .pc-card .pc-card-features {
+        padding: 10px;
+    }
+    #pricing #pricing-cards .pc-card .pc-card-features-heading {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    #pricing #pricing-cards .pc-card .pc-card-features .pc-card-features-list>div {
+        font-size: 11px;
+        padding: 4px;
+    }
+    #pricing #pricing-cards .pc-card .pc-card-features .pc-card-features-list>div span:nth-child(1) {
+        height: 28px;
+        width: 28px;
+        padding: 6px;
+    }
+    #pricing #pricing-cards .pc-card button {
+        padding: 15px 0;
+    }
+    footer {
+        padding: 40px 30px;
+        gap: 50px;
+    }
+    footer #footer-top #footer-top-left {
+        gap: 15px;
+        font-size: 13px;
+    }
+    footer #footer-top #footer-top-left #logo img {
+        height: 40px;
+        width: 40px;
+    }
+    footer #footer-top #footer-top-right {
+        gap: 60px;
+    }
+    footer #footer-top #footer-top-right .footer-sections .footer-links-heading {
+        font-size: 14px;
+    }
+    footer #footer-bottom {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:768px){
+    body {
+        padding: 0;
+    }
+
+    /* nav */
+    nav {
+        height: 40px;
+        margin: 0 0 25px 0;
+        font-size: 12px;
+        gap: 0;
+    }
+
+    nav #nav-left ul li img {
+        height: 35px;
+        width: 35px;
+    }
+
+    nav #nav-left ul li:nth-child(1) {
+        display: block;
+    }
+
+    nav #nav-left ul li:nth-child(3),nav #nav-left ul li:nth-child(4), nav #nav-left ul li:nth-child(5), nav #nav-left ul li:nth-child(6), nav #nav-left ul li:nth-child(7) {
+        display: none;
+    }
+
+    nav #nav-right ul {
+        gap: 6px;
+    }
+
+    nav #nav-right ul li button {
+        height: 20px;
+        width: 50px;
+    }
+
+    /* hero-section */
+    #hero-section {
+        margin: 25px auto;
+    }
+
+    #hero-section #hcs-1 {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #hero-section #hcs-1 span:nth-child(1) {
+        padding: 0;
+        font-size: 18px;
+    }
+
+    #hero-section #hcs-2 {
+        font-size: 14px;
+    }
+
+    #hero-section #hcs-3 {
+        font-size: 14px;
+    }
+
+    #hero-section #hcs-4 {
+        margin-top: 25px;
+    }
+
+    #hero-section #hcs-4 button {
+        width: 100px;
+        height: 35px;
+        font-size: 11px;
+    }
+
+    /* companies-section */
+    #companies {
+        height: 80px;
+        margin: 25px 10px;
+        gap: 3px;
+    }
+
+    /* banner-section */
+    #banner {
+        height: 200px;
+        margin: 25px 10px;
+    }
+
+    /* benefits-section */
+    #benefits {
+        margin: 25px 10px;
+    }
+
+    #benefits #benefits-heading {
+        font-size: 20px;
+    }
+
+    #benefits #benefits-para p {
+        font-size: 10px;
+    }
+
+    #benefits #benefits-para button {
+        padding: 2px;
+        height: 100%;
+        width: 100%;
+        font-size: 10px;
+    }
+    #benefits #benefits-cards {
+        margin-top: 20px;
+        gap: 10px;
+    }
+    #benefits #benefits-cards .bc-card {
+        padding: 5px;
+        width: 100%;
+    }
+    #benefits #benefits-cards .bc-card-num {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    #benefits #benefits-cards .bc-card-heading {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    #benefits #benefits-cards .bc-card-para {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+    #benefits #benefits-cards .bc-card-link {
+        font-size: 15px;
+        margin-top: 0;
+    }
+
+    /* courses-section */
+    #courses {
+        margin: 25px 10px;
+    }
+
+    #courses #courses-heading {
+        font-size: 20px;
+    }
+
+    #courses #courses-para p {
+        font-size: 10px;
+    }
+
+    #courses #courses-para button {
+        padding: 2px;
+        height: 100%;
+        width: 100%;
+        font-size: 10px;
+    }
+    #courses #courses-cards {
+        margin-top: 20px;
+    }
+
+    #courses #courses-cards .cc-card {
+        padding: 5px;
+        width: 100%;
+    }
+
+    #courses #courses-cards .cc-card .cc-card-img img {
+        height: 100px;
+    }
+    #courses #courses-cards .cc-card-brief {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #courses #courses-cards .cc-card-brief-duration, #courses #courses-cards .cc-card-brief-proficiency {
+        font-size: 8px;
+    }
+
+    #courses #courses-cards .cc-card-brief-author span {
+        font-size: 10px;
+    }
+
+    #courses #courses-cards .cc-card-heading {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    #courses #courses-cards .cc-card-para {
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    #courses #courses-cards .cc-card-button {
+        padding: 5px 0;
+        margin-top: 10px;
+    }
+
+    /* testimonials-section */
+    #testimonials {
+        margin: 25px 10px;
+    }
+
+    #testimonials #testimonials-heading {
+        font-size: 20px;
+    }
+
+    #testimonials #testimonials-para p {
+        font-size: 10px;
+    }
+
+    #testimonials #testimonials-para button {
+        padding: 2px;
+        height: 100%;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    #testimonials #testimonials-cards {
+        margin-top: 20px;
+    }
+
+    #testimonials #testimonials-cards .tc-card {
+        padding: 5px;
+        width: 100%;
+    }
+
+    #testimonials #testimonials-cards .tc-card-para {
+        margin-bottom: 15px;
+    }
+    #testimonials #testimonials-cards .tc-card-brief {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    #testimonials #testimonials-cards .tc-card-brief-left {
+        gap: 10px;
+    }
+
+    #testimonials #testimonials-cards .tc-card-brief-left .tc-card-brief-img {
+        height: 25px;
+        width: 25px;
+    }
+
+    #testimonials #testimonials-cards .tc-card-brief-left .tc-card-brief-author {
+        width: 179px;
+    }
+    #testimonials #testimonials-cards .tc-card-brief-right .tc-card-button {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    /* pricing-section */
+    #pricing {
+        margin: 25px 10px;
+    }
+    #pricing #pricing-heading {
+        font-size: 20px;
+    }
+    #pricing #pricing-para {
+        gap: 20px;
+    }
+    #pricing #pricing-para p {
+        font-size: 10px;
+    }
+    #pricing #pricing-para #filter {
+        padding: 5px;
+        height: 100%;
+        width: auto;
+    }
+    #pricing #pricing-para #filter button {
+        font-size: 8px;
+        font-weight: 300;
+    }
+    #pricing #pricing-cards {
+        margin-top: 20px;
+        padding: 10px;
+    }
+    #pricing #pricing-cards .pc-card {
+        gap: 2px;
+    }
+    #pricing #pricing-cards .pc-card .pc-card-heading {
+        padding: 4px 0;
+    }
+    #pricing #pricing-cards .pc-card .pc-card-pricing {
+        font-size: 8px;
+    }
+    #pricing #pricing-cards .pc-card .pc-card-pricing span {
+        font-size: 25px;
+    }
+    #pricing #pricing-cards .pc-card .pc-card-features {
+        padding: 5px;
+    }
+    #pricing #pricing-cards .pc-card .pc-card-features-heading {
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+    #pricing #pricing-cards .pc-card .pc-card-features .pc-card-features-list>div {
+        font-size: 9px;
+        padding: 2px;
+    }
+    #pricing #pricing-cards .pc-card .pc-card-features .pc-card-features-list>div span:nth-child(1) {
+        height: 20px;
+        width: 20px;
+        padding: 2px;
+    }
+    #pricing #pricing-cards .pc-card button {
+        padding: 5px 0;
+        font-size: 11px;
+        font-weight: 400;
+    }
+    footer {
+        padding: 25px 10px;
+        gap: 15px;
+    }
+    footer #footer-top {
+        gap: 12px;
+        flex-direction: column;
+    }
+    footer #footer-top #footer-top-left {
+        gap: 10px;
+        font-size: 10px;
+    }
+    footer #footer-top #footer-top-left #logo img {
+        height: 40px;
+        width: 40px;
+    }
+    footer #footer-top #footer-top-right {
+        gap: 15px;
+        flex-direction: column;
+    }
+    footer #footer-top #footer-top-right .footer-sections {
+        gap: 2px;
+    }    
+    footer #footer-top #footer-top-right .footer-sections .footer-links-heading {
+        font-size: 13px;
+    }
+    footer #footer-top #footer-top-right .footer-sections .footer-links a {
+        font-size: 10px;
+    }
+    footer #footer-top #footer-top-right .social-profiles {
+        gap: 2px;
+    }
+    footer #footer-top #footer-top-right .social-profiles .footer-links {
+        padding: 5px;
+    }
+    footer #footer-bottom {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:320px){
+    /* companies-section */
+    #companies {
+        height: 100%;
+    }
+}
